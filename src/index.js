@@ -5,7 +5,7 @@ import Pages from "./pages";
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({
-  uri: "https://server-catstronauts.herokuapp.com/", // change to YOUR own production server
+  uri: "https://server-lift-off-5-dn.herokuapp.com/",
   cache: new InMemoryCache(),
   name: "web",
   version: "1.0",
@@ -14,7 +14,7 @@ const client = new ApolloClient({
 ReactDOM.render(
   <ApolloProvider client={client}>
     <GlobalStyles />
-    <Pages />
+    <Pages/>
   </ApolloProvider>,
   document.getElementById("root")
 );
